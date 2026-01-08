@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecionando...</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
+      color: #ffffff;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .loader {
+      width: 48px;
+      height: 48px;
+      border: 5px solid rgba(255, 255, 255, 0.2);
+      border-top: 5px solid #25d366; /* verde WhatsApp */
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-top: 8px;
+    }
+  </style>
+
+ <script src="https://hera-tracking.developers-9af.workers.dev/track.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="loader"></div>
+    <h1>Redirecionando para o WhatsApp</h1>
+    <p>Aguarde alguns instantes…</p>
+  </div>
+</body>
+</html>
